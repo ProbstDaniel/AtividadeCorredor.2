@@ -1,0 +1,126 @@
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+} 
+
+/* Estilização do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #80D7FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Container do tabela */
+.ContainerGrande{
+    width: 80%;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Título da div ContainerGrande */
+h2{
+    text-align: left;
+    color: #333;
+    margin: 0 0 20px 10px;
+}
+
+/* A partir daqui é referente ao campo de pesquisa */
+.Pesquisar {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.Pesquisar input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.BtnPesquisar{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #28a745;;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.BtnPesquisar:hover {
+    background-color: #126124;
+}
+
+/* Estilo dos campos de input(no caso onde estão os dados da lista) */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilo da tabela em si */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Parte de cima / Cabeçalho da tabela */
+thead th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/*Faz com que altere as cores das linhas alternadas */
+/*nth que dizer qualquer numero ou "filho"*/
+tbody tr:nth-child(even) { /*todos os pares*/
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) { /*todos os ímpares*/
+    background-color: #f1f1f1;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Tabela sem aluno nenhum, referente a mensagem que irá aparecer caso ocorra */
+p {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+}
+/*dá cor vermelha ao a href que excloí os elementos de acordo com o id*/
+.deletar{
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.deletar:hover {
+    text-decoration: underline;
+}
+.deletar:active {
+    background-color: #92101d;
+    transform: scale(0.98);
+}
